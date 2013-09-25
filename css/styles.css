@@ -1,0 +1,459 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+} /* HTML5 display-role
+reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  width: 100%;
+  /*height: 440px;*/
+  overflow-x: hidden;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/** STRUCTURE Everything for positioning and backgrounds**/
+#navColumn {
+  width: 175px;
+  height: 120%;
+  background: url(../images/navBackground.png);
+  position: absolute;
+  left: 25px;
+  top: 0px;
+  z-index: 9;
+  padding: 15px;
+  float: left;
+}
+
+#pbrLogo {
+  width: 108px;
+  height: 117px;
+  background: url(../images/pbrLogo.png) no-repeat;
+  position: relative;
+  top: 400px;
+  left: 160px;
+}
+#timeBubble {
+ width:200px;
+ height:200px;
+ background: url(../images/time.png) no-repeat;
+ position:relative;
+ left: 113px;
+ top: -126px;
+ z-index:9;
+}
+#pbrLogo a {
+  width: 108px;
+  height: 117px;
+  display: block;
+}
+
+#artContainer {
+  width: 350px;
+  height: 404px;
+  margin: auto;
+  padding-top: 141px;
+}
+
+#title {
+  width: 437px;
+  height: 285px;
+  position: relative;
+  z-index: 2;
+}
+
+#lost {
+  width: 437px;
+  height: 127px;
+  background: url(../images/lost.png) no-repeat;
+}
+
+#ideas {
+  width: 437px;
+  height: 158px;
+  background: url(../images/ideas.png)no-repeat;
+}
+
+#jplayer {
+  width: 437PX;
+  height: 45px;
+  position: relative;
+  top: 80px;
+  left: -5px;
+  z-index: 8;
+}
+
+#punkGuy {
+  width: 318px;
+  height: 388px;
+  background: url(../images/punkGuy.png)no-repeat;
+  position: relative;
+  top: -357px;
+  z-index: 1;
+  left: 376px;
+}
+
+#bubbleStream_one {
+  width: 1011px;
+  height: 355px;
+  background: url(../images/bubbles1.png)no-repeat;
+  position: relative;
+  left: -446px;
+  top: -712px;
+}
+
+#bubbleStream_two {
+  width: 783px;
+  height: 410px;
+  background: url(../images/bubbles2.png)no-repeat;
+  position: relative;
+  top: -1431px;
+  left: -219px;
+}
+
+#bubbleStream_three {
+  width: 678px;
+  height: 309px;
+  background: url(../images/bubbles3.png)no-repeat;
+  position: relative;
+  top: -1700px;
+  left: 505px;
+}
+
+/** FONT STYLES mainly menus **/
+#navColumn ul {
+  font-family: helvetica;
+  font-size: 20px;
+  color: #e6e6e6;
+  font-size: 27px;
+  float: left;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+#navColumn ul li a {
+font-family: 'Roboto Slab', serif;
+  font-size: 17px;
+  line-height: 23px;
+  margin-left: 10px;
+  color: #e6e6e6;
+  text-decoration: none;
+}
+
+#navColumn ul li a:hover {
+  color: #d09d91;
+  text-decoration: underline;
+}
+
+#title h1 {
+  font-family: helvetica;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+#title h1 span {
+font-family: helvetica;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#title h3 a {
+  font-size: 20px;
+  font-family: 'Roboto Slab', serif;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  top: -7px;
+}
+
+#title h3 a:hover {
+  text-decoration: underline;
+}
+
+#rsvp {
+  font-size: 18px !important;
+  top: 0px !important;
+}
+
+/** MUSIC PLAYER **/
+.jp-controls {
+  width: 176px;
+  height: 35px;
+}
+
+.jp-controls li a {
+  height: 45px;
+  height: 35px;
+  float: left;
+  width: 35px;
+  margin-left: 2px;
+  text-indent: 999999px;
+  overflow: hidden;
+}
+
+.jp-play, .jp-pause, .jp-stop, .jp-next {
+  background: url(../images/buttons.png) -36px -2px;
+}
+
+.jp-playlist {
+  display: none;
+}
+
+.jp-pause {
+  background-position: 0px -2px;
+}
+
+.jp-stop {
+  background-position: 82px -2px;
+}
+.jp-next{
+  background-position: 40px -4px;
+}
+
+.jp-progress {
+  width: 290px;
+  height: 30px;
+  position: absolute;
+  top: 0px;
+  left: 120px;
+  overflow: hidden;
+  box-shadow: -2px 3px 1px #efc2b0;
+}
+
+.jp-seek-bar {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url(../images/navBackground.png);
+  top: 0px;
+  left: 0px;
+}
+
+.jp-title {
+  position: absolute;
+  top: 6px;
+  left: 130px;
+  z-index: 9;
+  font-family: helvetica;
+  font-size: 17px;
+  line-height: 22px;
+  color: rgb(200,200,200);
+}
+
+.jp-play-bar {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #6a7192;
+  z-index: 8;
+}
+/** MEDIA QUERIES **/
+@media all and (max-width:920px) and (min-width:450px) {
+  body {
+    height: 100%;
+  }
+
+  #navColumn {
+    width: 100%;
+    height: 100%;
+    background: url(../images/navBackground.png);
+    position: relative;
+    left: 0;
+    overflow: hidden;
+  }
+
+  #navColumn ul {
+    width: 70%;
+    float: left;
+  }
+
+  #navColumn ul li a {
+    float: left;
+    margin: 12px 4px 2px 7px;
+    font-size: 19px;
+  }
+
+  #timeBubble {
+    position: absolute;
+    left: 65%;
+    top: 0;	
+  }
+
+  #pbrLogo {
+    position: absolute;
+    top: 70%;
+    left: 72%;
+    z-index: 9;
+  }
+
+  #artContainer {
+    width: 104.5%;
+    height: 404px;
+    float: left;
+    padding-left: 2%;
+    overflow: hidden;
+  }
+
+  #punkGuy {
+    top: -398px;
+    z-index: 1;
+    left: 40%;
+    background-size: 300px;
+    width: 100%;
+    height: 420px;
+  }
+
+  #bubbleStream_one {
+    width: 1011px;
+    height: 355px;
+    background: url(../images/bubbles1.png)no-repeat;
+    position: relative;
+    left: -446px;
+    top: -732px;
+  }
+
+  #bubbleStream_two {
+    width: 783px;
+    height: 410px;
+    background: url(../images/bubbles2.png)no-repeat;
+    position: relative;
+    top: -1431px;
+    left: -219px;
+  }
+
+  #bubbleStream_three {
+    display: none;
+  };
+}
+
+@media all and (max-width:450px) and (min-width:0px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  #navColumn {
+    width: 100%;
+    background: url(../images/navBackground.png);
+    position: static;
+    float: left;
+  }
+
+  #navColumn ul li a {
+    font-size: 20px;
+    margin: 15px 3px 31px 18px;
+  }
+
+  #pbrLogo {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    float: left;
+  }
+
+  #artContainer {
+    width: 109.5%;
+    height: 408px;
+    float: left;
+    margin: 0;
+    padding-top: 100px;
+    overflow: hidden;
+  }
+
+  #title {
+    width: 90%;
+    height: 285px;
+    position: relative;
+    z-index: 2;
+  }
+
+  #title h1 {
+    font-size: 22px;
+  }
+
+  #title h1 span {
+    font-size: 16px;
+  }
+
+  #lost {
+    width: 100%;
+    background-size: 100%;
+    height: 124px;
+  }
+
+  #ideas {
+    width: 100%;
+    background-size: 100%;
+  }
+
+  #title h3 a {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  #rsvp {
+    font-size: 12px !important;
+  }
+
+  #jplayer {
+    width: 90%;
+    height: 45px;
+    position: relative;
+    top: 65px;
+    z-index: 8;
+    clear: both;
+  }
+
+  .jp-progress {
+    width: 70%;
+  }
+
+  .jp-title {
+    overflow: hidden;
+    width: 210px;
+    height: 25px;
+  }
+
+  #punkGuy {
+    top: -435px;
+    z-index: 1;
+    left: 43%;
+    background-size: 300px;
+    width: 80%;
+  }
+  #timeBubble {
+    left: 120px;
+    top: -15px;
+  } 
+
+  #bubbleStream_one, #bubbleStream_two, #bubbleStream_three {
+    display: none;
+  };
+}
