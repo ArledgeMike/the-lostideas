@@ -1,7 +1,7 @@
 The Lost Ideas
 ===========
 <img src ="https://raw.github.com/ArledgeMike/the-lostideas/master/images/lostideasArt.png" />
-<h2>Promotional Micro-site for a one-off art show sponsored by PBRart.</P>
+<h2>Promotional Micro-site for a one-off art show sponsored by PBRart.</h2>
 
 <ul>
 Project Details:
